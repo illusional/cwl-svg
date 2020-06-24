@@ -26,7 +26,7 @@
     "core-js": "^3.6.5"
   },
   "peerDependencies": {
-    "cwlts": "^1.15.30"
+    "cwlts": "^1.17.2"
   },
   "devDependencies": {
     "@types/core-js": "^2.5.3",
