@@ -2,17 +2,17 @@ export class EventHub {
     public readonly handlers: { [event: string]: Function[] };
 
     constructor(validEventList: string[]) {
-        this.handlers = validEventList.reduce((acc, ev) => Object.assign(acc, {[ev]: []}), {});
+        this.handlers = validEventList.reduce((acc, ev) => Object.assign(acc, { [ev]: [] }), {});
     }
 
-    on(event: keyof this["handlers"], handler) {
+    on(event: string, handler) {
         this.guard(event, "subscribe to");
         this.handlers[event].push(handler);
 
         return () => this.off(event, handler);
     }
 
-    off(event: keyof this["handlers"], handler) {
+    off(event: string, handler) {
         this.guard(event, "unsubscribe from");
         return this.handlers[event].splice(this.handlers[event].findIndex(h => handler === h), 1);
     }
