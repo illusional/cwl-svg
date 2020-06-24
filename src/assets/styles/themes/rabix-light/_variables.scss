@@ -1,0 +1,19 @@
+
+
+// Colors
+$background-color: white !default;
+
+// Fonts
+$font-color: #363636 !default;
+
+// Edges
+$edge-outer-stroke-width: 7px !default;
+
+// Node Icons
+$node-icon-fill-color: $background-color !default;
+$node-icon-stroke-color: $background-color !default;
+
+$node-input-fill-color: #8a8a8a !default;
+$node-output-fill-color: #8a8a8a !default;
+
+@import "../../variables";
