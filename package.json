@@ -23,13 +23,13 @@
     "ci": "npm run test"
   },
   "dependencies": {
-    "core-js": "^2.6.11"
+    "core-js": "^3.6.5"
   },
   "peerDependencies": {
     "cwlts": "^1.15.30"
   },
   "devDependencies": {
-    "@types/core-js": "^0.9.46",
+    "@types/core-js": "^2.5.3",
     "@types/jasmine": "^2.8.17",
     "@types/node": "^8.10.61",
     "@types/webpack": "^3.8.19",
